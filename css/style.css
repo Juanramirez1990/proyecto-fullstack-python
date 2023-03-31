@@ -1,0 +1,56 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+
+.contenedorimg{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 20px;
+    
+}
+
+#htmlimg{
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: black;
+}
+
+#htmlimg:hover{
+    transform:scale(1.2);
+}
+
+.containerCursos{
+    background-color: black;
+    border: solid black;
+    width: 600px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerMenu{    
+    background-color: black;
+    border: solid black;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin:40px;
+}
+
+header{
+    text-align: center;
+}
+
