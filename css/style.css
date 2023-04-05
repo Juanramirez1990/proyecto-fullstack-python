@@ -72,7 +72,9 @@ button{
 .quienesSomos{
     display: flex;
     justify-content: flex-end;
-}
+    background-color: grey;
+    border: solid black;
+    }
 
 .titulo{
     display: flex;
