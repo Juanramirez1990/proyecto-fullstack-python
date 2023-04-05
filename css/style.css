@@ -58,3 +58,24 @@ button{
     background-color: aliceblue;
     color: aliceblue;
 }
+
+.logoAcademia{
+    
+    background-color: aliceblue;
+}
+
+.logo{
+    border-radius: 50%;
+    border: solid black;
+}
+
+.quienesSomos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
