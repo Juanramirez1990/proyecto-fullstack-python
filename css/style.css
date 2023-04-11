@@ -1,83 +1,88 @@
 *{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;}
-
-body{
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-}
-
-
-.contenedorimg{
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    margin: 20px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
     
-}
-
-#htmlimg{
-    width: 150px;
-    height: 150px;
-    transition: 0.5s;
-    object-fit: cover;
-    background-color: black;
-}
-
-#htmlimg:hover{
-    transform:scale(1.2);
-}
-
-.containerCursos{
-    background-color: black;
-    border: solid black;
-    width: 600px;
-    height: 380px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.containerMenu{    
-    background-color: black;
-    border: solid black;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin:40px;
-}
-
-header{
-    text-align: center;
-}
-
-button{
-    background-color: aliceblue;
-    color: aliceblue;
-}
-
-.logoAcademia{
+    body{
+        background:linear-gradient(rgb(34, 10, 73),rgb(48, 14, 102),rgb(59, 13, 133)) ;
+        color: aliceblue;
     
-    background-color: aliceblue;
-}
-
-.logo{
-    border-radius: 50%;
-    border: solid black;
-}
-
-.quienesSomos{
-    display: flex;
-    justify-content: flex-end;
-    background-color: grey;
-    border: solid black;
     }
-
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    
+    
+    .contenedorimg{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin: 20px;
+        border: 1px solid black;
+        box-shadow: 7px 7px 15px 7px #000000; 
+        
+    }
+    
+    #htmlimg{
+        width: 150px;
+        height: 150px;
+        transition: 0.5s;
+        object-fit: cover;
+        background-color: black;
+    }
+    
+    #htmlimg:hover{
+        transform:scale(1.2);
+    }
+    
+    .containerCursos{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .containerMenu{    
+        width: 90%;
+        height: 90%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin:40px;
+    }
+    
+    header{
+        text-align: center;
+    }
+    
+    h2,h3,footer{
+        text-shadow: 2px 2px 2px #000000;
+    }
+    
+    .logo{
+        border-radius: 50%;
+        border: solid black;
+        height: 40px;
+        width: 55px;
+        margin-top: 20px;
+    }
+    
+    .quienesSomos{
+        display: flex;
+        justify-content: flex-end;
+        background-color: grey;
+        border: solid black;
+        }
+    
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px 2px #211500;
+    }
+    
+    .animate__animated.animate__fadeInDown{
+        --animate-duration: 4s;
+      }
+    
+      .animate__animated.animate__bounce{
+        --animate-duration: 1.5s;
+      }
