@@ -11,7 +11,7 @@
 
 <body>
     <div>
-        
+
     </div>
 
     <header>
@@ -21,24 +21,48 @@
         </nav>
 
         <h1 id="seleccion"></h1>
+        <h2>Contenidos del curso:</h2>
+        <h3 id="contenidos"></h3>
         <script>
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const nombre = urlParams.get('seleccion');
             document.getElementById('seleccion').textContent = nombre;
+            // Obtener el valor de la variable
+            var valor = nombre;
+
+            // Obtener el elemento HTML que deseas modificar
+            var titulo = document.getElementById("contenidos");
+
+            // Cambiar el contenido en función del valor de la variable
+            if (valor == 'Seleccionaste HTML') {
+                titulo.innerHTML = "<li>Fundamentos del mundo HTML.<br><li>Utilización y aplicación de CSS.<br><li>Propiedades, atributos y tipografías.<br><li>Utilización de vínculos e imágenes.<br><li>Desarrollo de formularios básicos.<br><li>Tablas, frames y videos.<br><li>Publicación de Proyecto final.<br><li>Protocolo de Transferencia de Archivos.";
+            } else if (valor == "Seleccionaste CSS") {
+                titulo.innerHTML = "<li>Historia de CSS<li>Módulos CSS<li>Conectar HTML y CSS<li>Sintaxis de CSS<li>Variables CSS";
+            } else if (valor == "Seleccionaste JavaScript") {
+                titulo.innerHTML = "<li>Aplicar y dominar el uso de variables, condicionales, ciclos, arreglos y funciones.<li>Modificar el DOM<li>Aplicar y dominar el paradigma de Programación Orientada a Objetos con el lenguaje JavaScript.<li>Utilizar los patrones de Asincronización de JavaScript.<li>Aplicar el trabajo con almacenamiento."
+            } else if (valor == "Seleccionaste Java") {
+                titulo.innerHTML = "<li>Entenderás qué es la automatización y la informática.<li>Aprenderás un lenguaje de programación de las computadoras.<li>Aprenderás a usar las computadoras en tu vida profesional.<li>Extenderás tu aprendizaje y habilidades en el lenguaje de programación Java.<li>Aprenderás las estructuras de datos en programación y algunas de sus aplicaciones.";
+            } else if (valor == "Seleccionaste Python") {
+                titulo.innerHTML = "<li>Aprender los mecanismos de creación de clases reutilizables.<li>Aplicar patrones de diseños simples.<li>Incorporar las bases y estructuras del lenguaje.<li>Aprender de forma paulatina y con la implementación de ejercicios.";
+            } else if (valor == "Seleccionaste Git") {
+                titulo.innerHTML = "<li>Usar uno de los mejores repositorios<li>Aprender una nueva habilidad que todo programador deberia de saber<li>Todo lo necesario para poder trabajar en grupo con git";
+            } else {
+                titulo.innerHTML = "La selección realizada no es reconocida";
+            }
         </script>
-        <p>Acá puede ir descripción del curso</p>
     </header>
 
     <section>
-        <h3>Formulario de Contacto</h3>
+        <br>
+        <h2>Formulario de Contacto</h2>
         <p>Ingrese su datos para comenzar el curso y poder brindarle el amterial de estudio</p>
         <form action="" method="get">
             <table border="0">
                 <tr id="form">
                     <td>
                         <label for="name">
-                            Nombre
+                            Nombre:
                         </label>
                     </td>
                     <td>
@@ -49,7 +73,7 @@
                 <tr>
                     <td>
                         <label for="edad">
-                            Edad
+                            Edad:
                         </label>
                     </td>
                     <td>
@@ -59,15 +83,26 @@
                 <tr>
                     <td>
                         <label for="fecha">
-                            Fecha Nac.
+                            Fecha Nac.:
                         </label>
                     </td>
                     <td>
                         <input type="date" name="fechaNac" id="fecha" min="1900-01-01">
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <label for="mail">
+                            e-mail:
+                        </label>
+                    </td>
+                    <td>
+                        <input type="email" name="e-mail" id="email" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </td>
+                </tr>
             </table>
-            <input type="submit" value="Enviar" id="otro">
+            <input type="submit" value="Enviar" id="botonEnviar">
         </form>
 
     </section>

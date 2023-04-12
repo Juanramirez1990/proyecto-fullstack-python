@@ -1,88 +1,110 @@
-*{
+* {
     margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;}
-    
-    body{
-        background:linear-gradient(rgb(34, 10, 73),rgb(48, 14, 102),rgb(59, 13, 133)) ;
-        color: aliceblue;
-    
-    }
-    
-    
-    .contenedorimg{
-        /* width: 150px;
-        height: 150px; */
-        /* overflow: hidden; */
-        margin: 1rem;
-        border: 1px solid black;
-        box-shadow: 7px 7px 15px 7px #000000; 
-        
-    }
-    
-    #htmlimg{
-        width: 10rem;
-        height: 10rem;
-        transition: 0.5s;
-        object-fit: cover;
-        background-color: black;
-    }
-    
-    #htmlimg:hover{
-        transform:scale(1.2);
-    }
-    
-    .containerCursos{
-        width: 50%;
-        height: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .containerMenu{    
-        width: 95%;
-        height: 80%;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        margin:40px;
-    }
-    
-    header{
-        text-align: center;
-    }
-    
-    h2,h3,footer{
-        text-shadow: 2px 2px 2px #000000;
-    }
-    
-    .logo{
-        border-radius: 50%;
-        border: solid black;
-        height: 40px;
-        width: 55px;
-        margin-top: 20px;
-    }
-    
-    .quienesSomos{
-        display: flex;
-        justify-content: flex-end;
-        background-color: grey;
-        border: solid black;
-        }
-    
-    .titulo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-shadow: 2px 2px 2px #211500;
-    }
-    
-    .animate__animated.animate__fadeInDown{
-        --animate-duration: 4s;
-      }
-    
-      .animate__animated.animate__bounce{
-        --animate-duration: 1.5s;
-      }
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+
+body {
+    height: 99vh;
+    width: 99vw;
+    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+    color: aliceblue;
+}
+
+.contenedorimg {
+    height: 166px;
+    max-width: 100%;
+    margin: 1rem;
+    border: 1px solid black;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #000000;
+
+}
+
+#htmlimg {
+    width: 10rem;
+    height: 10rem;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: black;
+}
+
+#htmlimg:hover {
+    transform: scale(1.2);
+}
+
+.containerCursos {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerMenu {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+h2,
+h3,
+footer {
+    text-shadow: 2px 2px 2px #000000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.logo {
+    border-radius: 50%;
+    border: solid black;
+    height: 40px;
+    width: 55px;
+    margin-top: 20px;
+}
+
+.quienesSomos {
+    display: flex;
+    justify-content: flex-end;
+    background-color: grey;
+    border: solid black;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px #211500;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 1.5s;
+}
+
+li{
+    text-align: left;
+}
+
+#contenidos{
+    display: grid;
+    justify-content: center;
+}
+
+input{
+    width: 14rem;
+}
+
+#botonEnviar{
+    width: 4rem;
+}
