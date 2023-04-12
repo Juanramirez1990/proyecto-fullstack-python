@@ -11,18 +11,18 @@
     
     
     .contenedorimg{
-        width: 150px;
-        height: 150px;
-        overflow: hidden;
-        margin: 20px;
+        /* width: 150px;
+        height: 150px; */
+        /* overflow: hidden; */
+        margin: 1rem;
         border: 1px solid black;
         box-shadow: 7px 7px 15px 7px #000000; 
         
     }
     
     #htmlimg{
-        width: 150px;
-        height: 150px;
+        width: 10rem;
+        height: 10rem;
         transition: 0.5s;
         object-fit: cover;
         background-color: black;
@@ -41,8 +41,8 @@
     }
     
     .containerMenu{    
-        width: 90%;
-        height: 90%;
+        width: 95%;
+        height: 80%;
         display: flex;
         align-content: center;
         justify-content: center;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Curso Html</title>
+</head>
+
+<body>
+    <div>
+        
+    </div>
+
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="quienesSomos.html">Quienes somos</a>
+        </nav>
+
+        <h1 id="seleccion"></h1>
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const nombre = urlParams.get('seleccion');
+            document.getElementById('seleccion').textContent = nombre;
+        </script>
+        <p>Acá puede ir descripción del curso</p>
+    </header>
+
+    <section>
+        <h3>Formulario de Contacto</h3>
+        <p>Ingrese su datos para comenzar el curso y poder brindarle el amterial de estudio</p>
+        <form action="" method="get">
+            <table border="0">
+                <tr id="form">
+                    <td>
+                        <label for="name">
+                            Nombre
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="name" placeholder="Ingrese nombre y apellido" required
+                            autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad">
+                            Edad
+                        </label>
+                    </td>
+                    <td>
+                        <input type="number" name="anios" id="edad" min="18" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fecha">
+                            Fecha Nac.
+                        </label>
+                    </td>
+                    <td>
+                        <input type="date" name="fechaNac" id="fecha" min="1900-01-01">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Enviar" id="otro">
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consectetur delectus ab qui sit aliquam
+            ad
+            assumenda eos voluptates amet!</p>
+        Derecho&Reservados 2023
+    </footer>
+
+</body>
+
+</html>
