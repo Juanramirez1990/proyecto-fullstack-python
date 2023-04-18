@@ -19,41 +19,44 @@
             <a href="index.html">Inicio</a>
             <a href="quienesSomos.html">Quienes somos</a>
         </nav>
+        <!--Agregué main y su Id-->
+        <main id="info"> 
 
-        <h1 id="seleccion"></h1>
-        <h2>Contenidos del curso:</h2>
-        <h3 id="contenidos"></h3>
-        <script>
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const nombre = urlParams.get('seleccion');
-            document.getElementById('seleccion').textContent = nombre;
-            // Obtener el valor de la variable
-            var valor = nombre;
+            <h1 id="seleccion"></h1>
+            <h2>Contenidos del curso:</h2>
+            <h3 id="contenidos"></h3>
+            <script>
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const nombre = urlParams.get('seleccion');
+                document.getElementById('seleccion').textContent = nombre;
+                // Obtener el valor de la variable
+                var valor = nombre;
 
-            // Obtener el elemento HTML que deseas modificar
-            var titulo = document.getElementById("contenidos");
+                // Obtener el elemento HTML que deseas modificar
+                var titulo = document.getElementById("contenidos");
 
-            // Cambiar el contenido en función del valor de la variable
-            if (valor == 'Seleccionaste HTML') {
-                titulo.innerHTML = "<li>Fundamentos del mundo HTML.<br><li>Utilización y aplicación de CSS.<br><li>Propiedades, atributos y tipografías.<br><li>Utilización de vínculos e imágenes.<br><li>Desarrollo de formularios básicos.<br><li>Tablas, frames y videos.<br><li>Publicación de Proyecto final.<br><li>Protocolo de Transferencia de Archivos.";
-            } else if (valor == "Seleccionaste CSS") {
-                titulo.innerHTML = "<li>Historia de CSS<li>Módulos CSS<li>Conectar HTML y CSS<li>Sintaxis de CSS<li>Variables CSS";
-            } else if (valor == "Seleccionaste JavaScript") {
-                titulo.innerHTML = "<li>Aplicar y dominar el uso de variables, condicionales, ciclos, arreglos y funciones.<li>Modificar el DOM<li>Aplicar y dominar el paradigma de Programación Orientada a Objetos con el lenguaje JavaScript.<li>Utilizar los patrones de Asincronización de JavaScript.<li>Aplicar el trabajo con almacenamiento."
-            } else if (valor == "Seleccionaste Java") {
-                titulo.innerHTML = "<li>Entenderás qué es la automatización y la informática.<li>Aprenderás un lenguaje de programación de las computadoras.<li>Aprenderás a usar las computadoras en tu vida profesional.<li>Extenderás tu aprendizaje y habilidades en el lenguaje de programación Java.<li>Aprenderás las estructuras de datos en programación y algunas de sus aplicaciones.";
-            } else if (valor == "Seleccionaste Python") {
-                titulo.innerHTML = "<li>Aprender los mecanismos de creación de clases reutilizables.<li>Aplicar patrones de diseños simples.<li>Incorporar las bases y estructuras del lenguaje.<li>Aprender de forma paulatina y con la implementación de ejercicios.";
-            } else if (valor == "Seleccionaste Git") {
-                titulo.innerHTML = "<li>Usar uno de los mejores repositorios<li>Aprender una nueva habilidad que todo programador deberia de saber<li>Todo lo necesario para poder trabajar en grupo con git";
-            } else {
-                titulo.innerHTML = "La selección realizada no es reconocida";
-            }
-        </script>
+                // Cambiar el contenido en función del valor de la variable
+                if (valor == 'Seleccionaste HTML') {
+                    titulo.innerHTML = "<li>Fundamentos del mundo HTML.<br><li>Utilización y aplicación de CSS.<br><li>Propiedades, atributos y tipografías.<br><li>Utilización de vínculos e imágenes.<br><li>Desarrollo de formularios básicos.<br><li>Tablas, frames y videos.<br><li>Publicación de Proyecto final.<br><li>Protocolo de Transferencia de Archivos.";
+                } else if (valor == "Seleccionaste CSS") {
+                    titulo.innerHTML = "<li>Historia de CSS<li>Módulos CSS<li>Conectar HTML y CSS<li>Sintaxis de CSS<li>Variables CSS";
+                } else if (valor == "Seleccionaste JavaScript") {
+                    titulo.innerHTML = "<li>Aplicar y dominar el uso de variables, condicionales, ciclos, arreglos y funciones.<li>Modificar el DOM<li>Aplicar y dominar el paradigma de Programación Orientada a Objetos con el lenguaje JavaScript.<li>Utilizar los patrones de Asincronización de JavaScript.<li>Aplicar el trabajo con almacenamiento."
+                } else if (valor == "Seleccionaste Java") {
+                    titulo.innerHTML = "<li>Entenderás qué es la automatización y la informática.<li>Aprenderás un lenguaje de programación de las computadoras.<li>Aprenderás a usar las computadoras en tu vida profesional.<li>Extenderás tu aprendizaje y habilidades en el lenguaje de programación Java.<li>Aprenderás las estructuras de datos en programación y algunas de sus aplicaciones.";
+                } else if (valor == "Seleccionaste Python") {
+                    titulo.innerHTML = "<li>Aprender los mecanismos de creación de clases reutilizables.<li>Aplicar patrones de diseños simples.<li>Incorporar las bases y estructuras del lenguaje.<li>Aprender de forma paulatina y con la implementación de ejercicios.";
+                } else if (valor == "Seleccionaste Git") {
+                    titulo.innerHTML = "<li>Usar uno de los mejores repositorios<li>Aprender una nueva habilidad que todo programador deberia de saber<li>Todo lo necesario para poder trabajar en grupo con git";
+                } else {
+                    titulo.innerHTML = "La selección realizada no es reconocida";
+                }
+            </script>
+        </main> 
     </header>
-
-    <section>
+    <!--Agruegué id a section-->
+    <section id="step-1">
         <br>
         <h2>Formulario de Contacto</h2>
         <p>Ingrese su datos para comenzar el curso y poder brindarle el amterial de estudio</p>
@@ -102,10 +105,26 @@
                     </td>
                 </tr>
             </table>
-            <input type="submit" value="Enviar" id="botonEnviar">
+            <!--Dejo sin efecto el input para aplicar función de js y reemplazo por boton
+            <input type="submit" value="Enviar" id="botonEnviar">-->
+            <button type="button" value="Enviar" id="botonEnviar">Enviar</button>
         </form>
 
     </section>
+
+    <!--Agrego section que contiene el mensaje una vez enviado el formulario-->
+    <div id="positionStep2">
+        <section id="step-2">
+                <h2>Gracias por comunicarte con nosotros</h2>
+                <h2 id="summary"></h2>
+                <h2>Te contactaremos a la brevedad!!</h2>
+                <!--Este boton es por si los datos son erroneos-->
+                <button type="button" value="Enviar" id="botonAtras"> Corregir datos</button>
+                <!--Boton volver a index si los datos son correctos-->
+                <a href="index.html"><button type="button" value="Enviar" id="salir"> Salir</button></a>
+        </section>
+    </div>
+      <script src="js/parametros.js"></script>
 
     <footer>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae consectetur delectus ab qui sit aliquam

@@ -108,3 +108,22 @@ input{
 #botonEnviar{
     width: 4rem;
 }
+
+#step-1{
+    display:block
+}
+
+#info{
+    display:block
+}
+
+#step-2{
+    display: none;
+
+}
+
+#positionStep2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
