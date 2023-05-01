@@ -1,14 +1,14 @@
 * {
-    margin: 0px;
-    padding: 0.1rem;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     height: 99vh;
     width: 99vw;
-    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
-    color: aliceblue;
+  background-color: aliceblue;
+    color: black
 }
 
 .contenedorimg {
@@ -49,39 +49,40 @@ body {
 
 header {
     text-align: center;
+    color: aliceblue;
+    position: fixed;
 }
 
-h2,
-h3,
+
 footer {
     text-shadow: 2px 2px 2px #000000;
-}
-
-footer {
+    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
     position: fixed;
     bottom: 0;
+    color: aliceblue;
 }
 
 .logo {
+    display: flex;
+    justify-content: flex-start;
     border-radius: 50%;
     border: solid black;
     height: 40px;
     width: 55px;
-    margin-top: 20px;
+   
 }
 
 .quienesSomos {
     display: flex;
     justify-content: flex-end;
-    background-color: grey;
-    border: solid black;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px #211500; 
 }
 
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 2px #211500;
+.titulo{
+  text-shadow: 2px 2px 2px #211500;
+  color: aliceblue;
 }
 
 .animate__animated.animate__fadeInDown {
@@ -126,4 +127,93 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+}
+
+#info,h2,h3{
+    color: black;
+}
+
+.container{
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider{
+    background-color: aliceblue;
+    padding: 40px 0;
+
+}
+
+.slider_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap:1em;
+}
+
+.slider_body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider_body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider_texts{
+    max-width: 600px;
+
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}
+
+.slider_review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.slider_img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider_arrow{
+    cursor:pointer;
+    width: 90%;
+}
+
+nav{
+    cursor: pointer;
+}
+
+hover{
+    color: #000000;
 }

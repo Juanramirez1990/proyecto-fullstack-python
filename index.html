@@ -13,12 +13,17 @@
 
 <body>
     <header>
-        <div class="logoAcademia">
-            <img class="logo" src="image/images.png" height="5%" width="5%" alt="logo academia web">
-            <h1 class="titulo animate__animated animate__fadeInDown" style="color:black">Academia Web</h1>
+        <div class="menu">
+            
+            <div>
+                <img class="logo" src="image/images.png" height="5%" width="5%" alt="logo academia web">
+                <h1 class="titulo animate__animated animate__fadeInDown">Academia Web</h1>
+            </div>
+            
             <nav class="quienesSomos">
-                <a href="quienesSomos.html">Quienes somos</a>
+                <a href="quienesSomos.html">Nosotros</a>
             </nav>
+
         </div>
 
         <h2>¿Que estas esperando? Animate, ingresá y obtené 50% off en el primer curso que elijas!!!</h2>
@@ -26,6 +31,52 @@
         <h3>Todos nuestros curso están diseñados para puedas insertarte en el mundo IT. Todos los cursos son a
             distancia. Vas a tener disponible tutores y profesores disponibles cuando lo necesites</h3>
     </header>
+    
+    <section class="slider">
+        <div class="slider_container container" >
+            <img src="image/bx-chevron-left.svg" alt="felcha" class="slider_arrow" id="before">
+            
+            <section class="slider_body slider_body--show" data-id="1">
+               
+                <div class="slider_texts">
+                    <h2 class="subtitle">¡Hola soy Manuel Rodriguez!</h2>
+                    <p class="slider_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, labore cum voluptate repellat quae velit.</p>
+               </div>
+
+               <figure class="slider_picture">
+                    <img src="image/retrato4.jpeg" alt="Retrato de Manuel Rodriguez" class="slider_img">
+                </figure>
+
+            </section>
+
+            <section class="slider_body" data-id="2">
+               
+                <div class="slider_texts">
+                    <h2 class="subtitle">¡Hola soy Josefina Valdez!</h2>
+                    <p class="slider_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, labore cum voluptate repellat quae velit.</p>
+               </div>
+
+               <figure class="slider_picture">
+                    <img src="image/retrato1.jpeg" alt="Retrato de Josefina Valdez" class="slider_img">
+                </figure>
+
+            </section>
+
+            <section class="slider_body" data-id="3">
+               
+                <div class="slider_texts">
+                    <h2 class="subtitle">¡Hola soy Alexis Casagrande!</h2>
+                    <p class="slider_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, labore cum voluptate repellat quae velit.</p>
+               </div>
+
+               <figure class="slider_picture">
+                    <img src="image/retrato2.jpeg" alt="Retrato de Alexis Casagrande" class="slider_img">
+                </figure>
+            </section>
+            
+            <img src="image/bx-chevron-right.svg" alt="felcha" class="slider_arrow" id="next">
+        </div>
+    </section>
 
     <div class="containerMenu">
         <div class="containerCursos">
@@ -62,7 +113,9 @@
 
         </div>
     </div>
-    <footer> Academia Web Derecho&Reservados 2023</footer>
+
+    <script src="slider.js"></script>
+    <footer> © 2023 Academia Web, todos los derechos reservados.</footer>
 
 </body>
 
