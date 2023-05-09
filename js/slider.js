@@ -18,7 +18,7 @@
             value= value === 0 ? sliders.lenght : 1;
         }
 
-        sliders[currentElement-1].classList.toggle("slider_body--show");
-        sliders[value-1].classList.toggle("slider_body--show");
+        sliders[currentElement-1].classList.toggle("slider body--show");
+        sliders[value-1].classList.toggle("slider body--show");
     }
 })()

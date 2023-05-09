@@ -50,7 +50,7 @@ body {
 header {
     text-align: center;
     color: aliceblue;
-    position: fixed;
+    
 }
 
 
@@ -217,3 +217,4 @@ nav{
 hover{
     color: #000000;
 }
+
