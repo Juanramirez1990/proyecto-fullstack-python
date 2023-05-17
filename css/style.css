@@ -139,6 +139,10 @@ input{
     
 }
 
+.logoo{
+    margin: 20px;
+}
+
 #info,h2,h3{
     color: black;
 }
@@ -214,6 +218,7 @@ input{
 
 nav{
     cursor: pointer;
+    margin: 20px;
 }
 
 hover{
