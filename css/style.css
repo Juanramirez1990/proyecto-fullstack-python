@@ -269,3 +269,64 @@ a{
     background-position: center;
     background-size: cover;
 }
+
+@media (max-width:760px){
+    
+    .slider_body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .slider_picture{
+        grid-row: 1/2;
+
+    }
+
+
+
+    .slider_img{
+        width: 210px;
+        height: 210px;
+
+    }
+
+
+}
+
+@media (max-width:425px){
+    
+    .slider_body{
+        grid-template-columns: 25px 1fr 25px;
+        grid-template-rows: max-content 1fr;
+        gap: 1em;
+    
+    }
+
+    .slider_picture{
+        grid-row: 1/2;
+
+    }
+
+    .slider_arrow{
+        width: 100%;
+    }
+
+    .slider_img{
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .subtitle{
+        font-size: 2rem ;
+        margin-bottom: 15px;
+    }
+
+    .slider_review{
+
+        font-size: 1rem;
+
+    line-height: 1.6;
+    }
+
+}
