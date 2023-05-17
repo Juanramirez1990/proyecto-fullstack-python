@@ -132,7 +132,10 @@ input{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+    background-image: url(/image/academia7.jpg);
+    height: 120px;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%); */
     
 }
 
@@ -257,4 +260,12 @@ hover{
 
 a{
     text-decoration: none;
+}
+
+.container--flex{
+    color:whitesmoke;
+    background-image: url(/image/academia7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
