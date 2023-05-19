@@ -70,7 +70,7 @@
         <br>
         <h2>Formulario de Contacto</h2>
         <p>Ingrese su datos para comenzar el curso y poder brindarle el amterial de estudio</p>
-        <form action="" method="get">
+        <form action="" method="get" id="formulario" onsubmit="return validarFormulario()">
             <table border="0">
                 <tr id="form">
                     <td>
@@ -79,8 +79,7 @@
                         </label>
                     </td>
                     <td>
-                        <input type="text" name="nombre" id="name" placeholder="Ingrese nombre y apellido" required
-                            autocomplete="off">
+                        <input type="text" name="nombre" id="name" placeholder="Ingrese nombre y apellido"autocomplete="off">
                     </td>
                 </tr>
                 <tr>
@@ -105,19 +104,29 @@
                 </tr>
                 <tr>
                     <td>
+                        <label for="dni">
+                            Dni:
+                        </label>
+                    </td>
+                    <td>
+                        <input type="number" name="dni" id="dni">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="mail">
                             e-mail:
                         </label>
                     </td>
                     <td>
-                        <input type="email" name="e-mail" id="email" required
+                        <input type="email" name="e-mail" id="email"
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </td>
                 </tr>
             </table>
             <!--Dejo sin efecto el input para aplicar función de js y reemplazo por boton
             <input type="submit" value="Enviar" id="botonEnviar">-->
-            <button type="button" value="Enviar" id="botonEnviar">Enviar</button>
+            <button type="submit" value="Enviar" id="botonEnviar">Enviar</button>
         </form>
 
     </section>
@@ -134,7 +143,8 @@
                 <a href="index.html"><button type="button" value="Enviar" id="salir"> Salir</button></a>
         </section>
     </div>
-      <script src="js/parametros.js"></script>
+      <!--<script src="js/parametros.js"></script>-->
+      <script src="js\validacion.js"></script>
 
     <!-- <footer> © 2023 Academia Web, todos los derechos reservados.</footer> -->
     <footer class="main-footer">
