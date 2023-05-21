@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="favicon/images.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Curso Html</title>
 </head>
 
@@ -27,10 +32,12 @@
                 <a href="quienesSomos.html">Quienes somos</a>
             </nav>
 
-        </div>
+        </div> 
+    </header>
 
-        <!--Agregué main y su Id-->
-        <main id="info"> 
+     <!--Agregué main y su Id-->
+    <main>    
+        <section id="info"> 
 
             <h1 id="seleccion"></h1>
             <h2>Contenidos del curso:</h2>
@@ -63,8 +70,8 @@
                     titulo.innerHTML = "La selección realizada no es reconocida";
                 }
             </script>
-        </main> 
-    </header>
+        </section>
+    </main>
     <!--Agruegué id a section-->
     <section id="step-1">
         <br>
@@ -124,25 +131,26 @@
                     </td>
                 </tr>
             </table>
-            <!--Dejo sin efecto el input para aplicar función de js y reemplazo por boton
+            <!--Dejo sin efecto el input para aplicar función de js y reemplazo por button
             <input type="submit" value="Enviar" id="botonEnviar">-->
             <button type="submit" value="Enviar" id="botonEnviar">Enviar</button>
         </form>
 
     </section>
 
-    <!--Agrego section que contiene el mensaje una vez enviado el formulario-->
+    <!-- Por ahora lo dejamos sin efecto
+        Agrego section que contiene el mensaje una vez enviado el formulario
     <div id="positionStep2">
         <section id="step-2">
                 <h2>Gracias por comunicarte con nosotros</h2>
                 <h2 id="summary"></h2>
                 <h2>Te contactaremos a la brevedad!!</h2>
-                <!--Este boton es por si los datos son erroneos-->
+                Este boton es por si los datos son erroneos
                 <button type="button" value="Enviar" id="botonAtras"> Corregir datos</button>
-                <!--Boton volver a index si los datos son correctos-->
+                Boton volver a index si los datos son correctos
                 <a href="index.html"><button type="button" value="Enviar" id="salir"> Salir</button></a>
         </section>
-    </div>
+    </div>-->
       <!--<script src="js/parametros.js"></script>-->
       <script src="js\validacion.js"></script>
 

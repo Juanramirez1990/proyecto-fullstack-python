@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -56,9 +55,10 @@ header {
 
 footer {
     text-shadow: 2px 2px 2px #000000;
-    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+    /*background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);*/
     bottom: 0;
     color: aliceblue;
+    background-color: rgb(57,57,69);
 }
 
 .logo {
@@ -110,7 +110,8 @@ input{
 }
 
 #step-1{
-    display:block
+    display:block;
+    margin-bottom: 50px;
 }
 
 #info{
@@ -133,9 +134,13 @@ input{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    background-image: url(/image/academia7.jpg);
+    background-color: rgb(57,57,69);
     height: 120px;
     background-repeat: no-repeat;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     /* background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%); */
     
 }
@@ -150,7 +155,7 @@ input{
 
 .container{
     width: 90%;
-    min-height: 100vh;
+    min-height: 50vh;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -256,9 +261,6 @@ hover{
     padding: 10px;
 }
 
-#positionfooter{
-    padding-top: 108px;
-}
 
 #anclacursos{
     margin: 5px;
@@ -270,8 +272,7 @@ a{
 
 .container--flex{
     color:whitesmoke;
-    background-image: url(/image/academia7.jpg);
-    background-repeat: no-repeat;
+    background-color: rgb(57,57,69);
     background-position: center;
     background-size: cover;
 }
@@ -364,7 +365,7 @@ textarea {
 
 input[type="submit"] {
     padding: 10px;
-    background-color: #007bff;
+    background-color: rgb(57,57,69);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -374,3 +375,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+main{
+    margin-top: 140px;
+}
+
