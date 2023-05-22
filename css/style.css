@@ -380,3 +380,23 @@ main{
     margin-top: 140px;
 }
 
+.fundador{
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+.containerFundadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.h1somos {
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
