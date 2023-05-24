@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: aliceblue;
+    background: rgb(255,253,253);
+    background: radial-gradient(circle, rgba(255,253,253,1) 0%, rgba(196,197,199,1) 100%);
     color: black
 }
 
@@ -15,8 +16,7 @@ body {
     height: 166px;
     max-width: 100%;
     margin: 1rem;
-    border: 1px solid black;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #000000;
+
 
 }
 
@@ -25,11 +25,14 @@ body {
     height: 10rem;
     transition: 0.5s;
     object-fit: cover;
-    background-color: black;
+    
 }
 
 #htmlimg:hover {
     transform: scale(1.2);
+    box-shadow: 0.0rem 0.0rem 1.0rem 0.1rem #000000;
+    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+
 }
 
 .containerCursos {
@@ -70,16 +73,18 @@ header {
 
 
 .menu h1 span {
-    color: #e0ac1c;
+    color: darkviolet;
 }
 
 .logo {
     display: flex;
     justify-content: flex-start;
     border-radius: 50%;
-    border: solid black;
-    height: 40px;
-    width: 55px;
+    height: 50px;
+    width: 60px;
+    object-fit: cover;
+    background-color: aliceblue;
+    border: solid darkviolet 1px;
    
 }
 
@@ -87,8 +92,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: aliceblue;
-    box-shadow: 2px 2px 2px #211500; 
+    border-radius: 40%;
 }
 
 .titulo{
@@ -105,7 +109,7 @@ header {
 }
 
 li{
-    text-align: left;
+    text-align: center;
 }
 
 #contenidos{
@@ -148,7 +152,6 @@ input{
     justify-content: space-between;
     background-color: #2d2a30;
     /* background-color: rgb(57,57,69); */
-    height: 120px;
     background-repeat: no-repeat;
     position: fixed;
     left: 0;
@@ -175,7 +178,6 @@ input{
 }
 
 .slider{
-    background-color: aliceblue;
     padding: 40px 0;
 
 }
@@ -193,7 +195,6 @@ input{
     opacity: 0;
     pointer-events: none;
     display: grid;
-    background-color: aliceblue;
     grid-template-columns: 1fr max-content;
     align-items: center;
     transition: opacity 1.5s;
@@ -228,6 +229,7 @@ input{
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    box-shadow: 0px 0px 6px black;
 }
 
 .slider_arrow{
@@ -240,9 +242,7 @@ nav{
     margin: 20px;
 }
 
-hover{
-    color: #000000;
-}
+
 
 #cursos{
     background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
@@ -252,6 +252,7 @@ hover{
     border-radius: 60px;
     width: 30%;
     height: 40px;
+    box-shadow: 0px 0px 8px black;
     
 }
 
@@ -260,6 +261,7 @@ hover{
     justify-content: center;
     align-items: center;
     color: aliceblue;
+    text-decoration: none;
 }
 
 #cursosPosition{
@@ -279,8 +281,16 @@ hover{
     margin: 5px;
 }
 
-a{
+.margina{
     text-decoration: none;
+    color: aliceblue;
+    margin: 20px;
+
+}
+
+.margina:hover{
+    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+
 }
 
 .container--flex{
@@ -394,8 +404,9 @@ main{
 }
 
 .fundador{
-    border-radius: 40%;
+    border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0px 0px 6px black;
 }
 
 .containerFundadores{
@@ -461,7 +472,7 @@ footer {
 
 
 .footer-general h3 span {
-    color: #e0ac1c;
+    color: darkviolet;
 }
 
 /* Footer links */
@@ -572,11 +583,11 @@ footer {
 }
 
 .footer-general .footer-icons a:hover {
-    background-color: #3F71EA;
+    background-color: darkviolet;
 }
 
 .footer-links a:hover {
-    color: #3F71EA;
+    color: darkviolet;
 }
 
 @media (max-width: 880px) {
@@ -591,3 +602,15 @@ footer {
     }
 }       
         
+button{
+    margin: 10px;
+    cursor: pointer;
+    background-color: #33383b;
+    color: aliceblue;
+}
+
+
+
+.preguntas{
+    margin-left: 10px;
+}

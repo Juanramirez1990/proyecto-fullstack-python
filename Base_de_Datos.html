@@ -1,83 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ee">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="favicon/images.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon/images.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Quienes somos</title>
+    <title>Base de datos</title>
 </head>
 <body>
-
     <header>
-
         <div class="menu">
-                
+            
             <div class="logoo">
                 <img class="logo" src="image/images.png" height="5%" width="5%" alt="logo academia web">
                 <h1 class="titulo animate__animated animate__fadeInDown">Academia <span>Web</span></h1>
             </div>
-
+            
             <nav class="quienesSomos">
-                <a class="margina" href="index.html">Inicio</a>
+                <a class="margina" href="quienesSomos.html">Quienes somos</a>
             </nav>
 
         </div>
-        
-          
 
     </header>
 
     <main>
-        <h2 class="title">Quienes Somos</h2>
-        <br>
-        <h3>Academia Web nace como un proyecto de estudiantes de programación Codo a Codo. Nos complementamos sumando creatividad y gestión con un condimento especial: Las ganas de trabajar en este ámbito. Academia Web es aprendizaje personalizado. Nuestra plataforma permite planificar recorridos a medida de cada estudiante, respetando la diversidad de interéses y sus propios tiempos. Academia Web es lo que necesitas: precio, calidad de contenido y plataforma online.</h3>
-        <br>
-        <br>
-        <div class="containerFundadores">
-            <div><img class="fundador" src="image\fer.jpeg" alt="imgen de Fernando. Miembro fundador" width="220px" height="220px"><p>Fernando</p></div>
-            <div><img class="fundador" src="image\damian.jpeg" alt="imgen de Damian. Miembro fundador" width="220px" height="220px"><p>Damian</p></div>
-            <div><img class="fundador" src="image\juan.jpeg" alt="imagen de Juan. Miembro fundador" width="220px" height="220px"><p>Juan</p></div>
+        <h1>BASE DE DATOS</h1>
+        <div id="baseDeDatos">
+         
         </div>
-        <br>
-        <br>
-        <h1 class="h1somos">Juntos podemos transformar las
-            experiencias de aprendizaje.
-            Te ayudamos a potenciar tus habilidades, gestionar la transformación digital
-            y lograr un aprendizaje significativo para para vos.</h1>
-            <br>
-            <br>
-
-        <h2>Donde estamos!!!</h2>
-        <br>
-        <p>Nuestras oficinas se encuentran en la Ciudad Autónoma de Buenos Aires. Contamos con un stand donde podes vivir una experiencia increíble de lo que es estudiar en Academia Web</p>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.205203996833!2d-58.39112481047373!3d-34.59897220322514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac7795b9a6b%3A0x80117a264973a28b!2sAv.%20C%C3%B3rdoba%201353%2C%20C1015%20CABA!5e0!3m2!1ses!2sar!4v1684785513598!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
     </main>
-
     <footer class="footer-general">
 
         <div class="footer-left">
             <h3>Academia<span>Web</span></h3>
-
+    
             <p class="footer-company-name">Copyright © 2023 <strong>Academia Web</strong>. Todos los derechos reservados.</p>
         </div>
-
+    
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
                 <p><span>Avda. Córdoba Nº 1353 - CABA</span>
                     Argentina</p>
             </div>
-
+    
             <div>
                 <i class="fa fa-phone"></i>
                 <p>+54 999-99999</p>
@@ -103,7 +77,7 @@
             </div>
         </div>
     </footer>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script src="js\api.js"></script>
 </body>
 </html>
