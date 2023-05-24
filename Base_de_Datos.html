@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ee">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="favicon/images.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -14,15 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Base de datos</title>
 </head>
+
 <body>
     <header>
         <div class="menu">
-            
+
             <div class="logoo">
                 <img class="logo" src="image/images.png" height="5%" width="5%" alt="logo academia web">
                 <h1 class="titulo animate__animated animate__fadeInDown">Academia <span>Web</span></h1>
             </div>
-            
+
             <nav class="quienesSomos">
                 <a class="margina" href="quienesSomos.html">Quienes somos</a>
             </nav>
@@ -34,24 +36,65 @@
     <main>
         <h1>BASE DE DATOS</h1>
         <div id="baseDeDatos">
-         
+
         </div>
+        <div class="container my-5 text-center">
+            <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
+            <div class="mt-5" id="contenido">
+                <!-- <img src="" width="100px" class="img-fluid rounded-circle"> -->
+                <!-- <p>Nombre: </p> -->
+            </div>
+        </div>
+        <script>
+
+            var contenido = document.querySelector('#contenido');
+
+            function traer() {
+                // contenido.innerHTML = `<p>dasdas</p>`
+                // https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch
+                // }) // Arrow Fx: tomamos el dato que recibimos y lo trasformamos. Esta primera promesa, transforma nuestro archivo.
+                // fetch('texto.txt') // Fetch hace promesas (then)
+                fetch('https://randomuser.me/api/') // Fetch devuelve promesas (then)
+                    // .then(res => {
+                    //     console.log(res)
+                    // .then(res => res.text())
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        console.log(data.results)
+                        console.log(data.results[0].email) // Esto es random, no siempre trae el mismo dato.
+                        // contenido.innerHTML = `${data}`
+                        contenido.innerHTML = /*html*/
+                            `
+            <img src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
+            <p>Nombre: ${data.results[0].name.first}</p>
+            <p>Apellido: ${data.results[0].name.last}</p>
+            <p>usuario: ${data.results[0].name.username}</p>
+            
+            <p>e-mail: ${data.results[0].email}</p>
+            `
+
+                    });
+            }
+
+        </script>
     </main>
     <footer class="footer-general">
 
         <div class="footer-left">
             <h3>Academia<span>Web</span></h3>
-    
-            <p class="footer-company-name">Copyright © 2023 <strong>Academia Web</strong>. Todos los derechos reservados.</p>
+
+            <p class="footer-company-name">Copyright © 2023 <strong>Academia Web</strong>. Todos los derechos
+                reservados.</p>
         </div>
-    
+
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
                 <p><span>Avda. Córdoba Nº 1353 - CABA</span>
                     Argentina</p>
             </div>
-    
+
             <div>
                 <i class="fa fa-phone"></i>
                 <p>+54 999-99999</p>
@@ -64,13 +107,16 @@
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>Acerca de Nosotros</span>
-                <strong>Academia Web</strong> es un instituto edtech que potencia al ecosistema tecnológico y ayuda a la formación en programación y oficios 
-                digitales con el objetivo de promover el desarrollo de talento digital para la industria TIC e impulsar su inserción laboral en el Sector IT.
-                </p>
+                <strong>Academia Web</strong> es un instituto edtech que potencia al ecosistema tecnológico y ayuda a la
+                formación en programación y oficios
+                digitales con el objetivo de promover el desarrollo de talento digital para la industria TIC e impulsar
+                su inserción laboral en el Sector IT.
+            </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/Juanramirez1990/proyecto-fullstack-python.git" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://github.com/Juanramirez1990/proyecto-fullstack-python.git" target="_blank"><i
+                        class="fa fa-github"></i></a>
                 <a href="https://ar.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
@@ -80,4 +126,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
     <script src="js\api.js"></script>
 </body>
+
 </html>
