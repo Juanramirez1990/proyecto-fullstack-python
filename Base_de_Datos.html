@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ee">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,11 +18,11 @@
 
 <body>
     <header>
-        <div class="menu">
+        <div class="menuu">
 
             <div class="logoo">
-                <img class="logo" src="image/images.png" height="5%" width="5%" alt="logo academia web">
-                <h1 class="titulo animate__animated animate__fadeInDown">Academia <span>Web</span></h1>
+                <img class="logo" src=image\programacion.png height="5%" width="5%" alt="logo academia web">
+                <h1 class="titulo animate__animated animate__fadeInDown" style="font:cursive;">Academia <span>Web</span></h1>
             </div>
 
             <nav class="quienesSomos">
@@ -32,22 +32,26 @@
         </div>
 
     </header>
+    
+            <div class="container my-5 text-center">
+                <br>
+                <br>
+                <br>
+                <h2 class="base">BASE DE DATOS DE ALUMNOS</h2>
+                <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
+                <div class="mt-5" id="contenido">
 
-    <main>
-        <h1>BASE DE DATOS</h1>
-        <div id="baseDeDatos">
-
-        </div>
-        <div class="container my-5 text-center">
-            <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
-            <div class="mt-5" id="contenido">
-                <!-- <img src="" width="100px" class="img-fluid rounded-circle"> -->
-                <!-- <p>Nombre: </p> -->
+                    
+                    <!-- <img src="" width="100px" class="img-fluid rounded-circle"> -->
+                    <!-- <p>Nombre: </p> -->
+                </div>
             </div>
-        </div>
-        <script>
+        
+     
+            <script>
 
             var contenido = document.querySelector('#contenido');
+            
 
             function traer() {
                 // contenido.innerHTML = `<p>dasdas</p>`
@@ -66,7 +70,9 @@
                         // contenido.innerHTML = `${data}`
                         contenido.innerHTML = /*html*/
                             `
-            <img src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
+            <img style="border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 0px 6px black;" src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
             <p>Nombre: ${data.results[0].name.first}</p>
             <p>Apellido: ${data.results[0].name.last}</p>
             <p>usuario: ${data.results[0].name.username}</p>
@@ -78,11 +84,11 @@
             }
 
         </script>
-    </main>
+
     <footer class="footer-general">
 
         <div class="footer-left">
-            <h3>Academia<span>Web</span></h3>
+            <h3 style="font:cursive;">Academia<span>Web</span></h3>
 
             <p class="footer-company-name">Copyright © 2023 <strong>Academia Web</strong>. Todos los derechos
                 reservados.</p>

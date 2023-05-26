@@ -12,6 +12,10 @@ body {
     color: black
 }
 
+.baseimg{
+background-image: url(image\api-application-programming-interface-com-portátil-84181438.jpg);
+}
+
 .contenedorimg {
     height: 166px;
     max-width: 100%;
@@ -76,6 +80,17 @@ header {
     color: darkviolet;
 }
 
+.menuu h1 {
+    color: #ffffff;
+    font: normal 60px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.menuu h1 span {
+    color: darkviolet;
+}
+
 .logo {
     display: flex;
     justify-content: flex-start;
@@ -85,6 +100,7 @@ header {
     object-fit: cover;
     background-color: aliceblue;
     border: solid darkviolet 1px;
+    margin: 5px;
    
 }
 
@@ -93,6 +109,8 @@ header {
     justify-content: flex-end;
     align-items: center;
     border-radius: 40%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .titulo{
@@ -109,7 +127,7 @@ header {
 }
 
 li{
-    text-align: center;
+    text-align: left;
 }
 
 #contenidos{
@@ -161,8 +179,25 @@ input{
     
 }
 
+.menuu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d2a30;
+    /* background-color: rgb(57,57,69); */
+    background-repeat: no-repeat;
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%); */
+    
+}
+
 .logoo{
-    margin: 20px;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 #info,h2,h3{
@@ -239,7 +274,6 @@ input{
 
 nav{
     cursor: pointer;
-    margin: 20px;
 }
 
 
@@ -323,7 +357,7 @@ nav{
 
 }
 
-@media (max-width:390px){
+@media (max-width:374px){
     
     .slider_body{
         grid-template-columns: 25px 1fr 25px;
@@ -400,7 +434,7 @@ input[type="submit"]:hover {
 }
 
 main{
-    margin-top: 140px;
+    margin-top: 50px;
 }
 
 .fundador{
@@ -438,9 +472,9 @@ footer {
     footer {
         position: static;
     }
-    header {
+    /*header {
         padding-top: 40px;
-    }
+    }*/
 }
 
 .footer-general {
@@ -614,3 +648,14 @@ button{
 .preguntas{
     margin-left: 10px;
 }
+
+.base{
+    text-align: center;
+}
+
+.my-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
