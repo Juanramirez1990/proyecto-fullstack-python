@@ -47,6 +47,8 @@ background-image: url(image\api-application-programming-interface-com-portátil-
     justify-content: center;
 }
 
+
+
 .containerMenu {
     display: flex;
     align-content: center;
@@ -143,24 +145,17 @@ input{
     width: 4rem;
 }
 
-#step-1{
-    display:block;
-    margin-bottom: 50px;
-}
 
-#info{
-    display:block
-}
-
-#step-2{
-    display: none;
-
-}
-
-#positionStep2{
+.containergral{
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerform{
+    margin: 10px;
 }
 
 .menu{
@@ -171,7 +166,7 @@ input{
     background-color: #2d2a30;
     /* background-color: rgb(57,57,69); */
     background-repeat: no-repeat;
-    position: fixed;
+    position: static;
     left: 0;
     top: 0;
     width: 100%;
@@ -203,6 +198,24 @@ input{
 #info,h2,h3{
     color: black;
 }
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+iframe{
+    box-shadow: 0px 0px 6px darkviolet;
+    border: 3px solid black;
+    margin: 20px;
+}
+.somos{
+    text-align: center; 
+}
+
+
 
 .container{
     width: 90%;
@@ -399,9 +412,11 @@ form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border: 1px solid lightslategray;
     border-radius: 5px;
+    background-color: #2d2a30;
+    color:aliceblue;
+    border: 2px solid black;
+    box-shadow: 0px 0px 6px darkviolet;
 }
 
 label {
@@ -453,6 +468,9 @@ main{
 }
 .h1somos {
     text-align: center;
+    background: linear-gradient(rgb(34, 10, 73) 0%, rgb(72, 43, 118) 50%, rgb(127, 89, 187) 100%);
+    color: aliceblue;
+    text-shadow: 1px 1px 6px white;
 }
 
 .title{
@@ -483,8 +501,8 @@ footer {
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
-    margin-top: 0;
+    padding: 60px 50px 60px 50px;
+    margin-top: 170px;
 }
 
 .footer-general .footer-left, .footer-general .footer-center, .footer-general .footer-right {
@@ -657,5 +675,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 

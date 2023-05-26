@@ -30,8 +30,21 @@
             </div>
             
             <nav class="quienesSomos">
-                <a class="margina" href="index.html">Inicio</a>
-                <a class="margina" href="quienesSomos.html">Quienes somos</a>
+                <div id="anclacursos">
+                    <a class="margina" href="index.html">Inicio</a>
+                </div>
+        
+                <div id="anclacursos">
+                    <a class="margina" href="quienesSomos.html">Quienes somos</a>
+                </div>
+
+                <div id="anclacursos">
+                    <a class="margina" href="nuestrosCursos.html">Nuestros cursos</a>
+                </div>
+
+                <div id="anclacursos">
+                    <a class="margina" href="Base_de_Datos.html">Base de datos</a>
+                </div>
             </nav>
 
         </div> 
@@ -39,11 +52,15 @@
 
      <!--Agregué main y su Id-->
     <main>    
-        <section id="info"> 
-
-            <h1 id="seleccion"></h1>
-            <h2>Contenidos del curso:</h2>
-            <h3 id="contenidos"></h3>
+        <div class="containergral"> 
+            <div>
+                <h1 class="somos" id="seleccion"></h1>
+            </div>
+            <br>
+            <div class="contaninercont">    
+                <h2 class="somos somosmargin">Contenidos del curso:</h2>
+                <h4 id="contenidos"></h4>
+            </div>
             <script>
                 const queryString = window.location.search;
                 const urlParams = new URLSearchParams(queryString);
@@ -72,74 +89,75 @@
                     titulo.innerHTML = "La selección realizada no es reconocida";
                 }
             </script>
-        </section>
+        
+            <div class="containerform">
+                <!--Agruegué id a section
+                <section id="step-1">
+                    <br>-->
+                    <h2>Formulario de Contacto</h2>
+                    <form action="" method="get" id="formulario" onsubmit="return validarFormulario()">
+                        <table border="0">
+                            <tr id="form">
+                                <td>
+                                    <label for="name">
+                                        Nombre:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="text" name="nombre" id="name" placeholder="Ingrese nombre y apellido"autocomplete="off">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="edad">
+                                        Edad:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="number" name="anios" id="edad" min="18" max="100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fecha">
+                                        Fecha Nac.:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="date" name="fechaNac" id="fecha" min="1900-01-01">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="dni">
+                                        Dni:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="number" name="dni" id="dni">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="mail">
+                                        e-mail:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="email" name="e-mail" id="email"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                </td>
+                            </tr>
+                        </table>
+                        <!--Dejo sin efecto el input para aplicar función de js y reemplazo por button
+                        <input type="submit" value="Enviar" id="botonEnviar">-->
+                        <button type="submit" value="Enviar" id="botonEnviar">Enviar</button>
+                    </form>
+            
+                <!--</section>-->
+            </div>
+        </div>
     </main>
-    <!--Agruegué id a section-->
-    <section id="step-1">
-        <br>
-        <h2>Formulario de Contacto</h2>
-        <p>Ingrese su datos para comenzar el curso y poder brindarle el amterial de estudio</p>
-        <form action="" method="get" id="formulario" onsubmit="return validarFormulario()">
-            <table border="0">
-                <tr id="form">
-                    <td>
-                        <label for="name">
-                            Nombre:
-                        </label>
-                    </td>
-                    <td>
-                        <input type="text" name="nombre" id="name" placeholder="Ingrese nombre y apellido"autocomplete="off">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="edad">
-                            Edad:
-                        </label>
-                    </td>
-                    <td>
-                        <input type="number" name="anios" id="edad" min="18" max="100">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="fecha">
-                            Fecha Nac.:
-                        </label>
-                    </td>
-                    <td>
-                        <input type="date" name="fechaNac" id="fecha" min="1900-01-01">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="dni">
-                            Dni:
-                        </label>
-                    </td>
-                    <td>
-                        <input type="number" name="dni" id="dni">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="mail">
-                            e-mail:
-                        </label>
-                    </td>
-                    <td>
-                        <input type="email" name="e-mail" id="email"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                    </td>
-                </tr>
-            </table>
-            <!--Dejo sin efecto el input para aplicar función de js y reemplazo por button
-            <input type="submit" value="Enviar" id="botonEnviar">-->
-            <button type="submit" value="Enviar" id="botonEnviar">Enviar</button>
-        </form>
-
-    </section>
-
     <!-- Por ahora lo dejamos sin efecto
         Agrego section que contiene el mensaje una vez enviado el formulario
     <div id="positionStep2">
