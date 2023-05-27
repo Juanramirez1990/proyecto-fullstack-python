@@ -17,6 +17,11 @@
 </head>
 
 <body>
+
+    <div>
+        <h1 getnombreAxios()
+        >Legajo de empleado</h1>    
+    </div>
     <header>
         <div class="menuu">
 
@@ -44,8 +49,7 @@
                 <div class="mt-5" id="contenido">
 
                     
-                    <!-- <img src="" width="100px" class="img-fluid rounded-circle"> -->
-                    <!-- <p>Nombre: </p> -->
+                   
                 </div>
             </div>
         
@@ -56,21 +60,15 @@
             
 
             function traer() {
-                // contenido.innerHTML = `<p>dasdas</p>`
-                // https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch
-                // }) // Arrow Fx: tomamos el dato que recibimos y lo trasformamos. Esta primera promesa, transforma nuestro archivo.
-                // fetch('texto.txt') // Fetch hace promesas (then)
-                fetch('https://randomuser.me/api/') // Fetch devuelve promesas (then)
-                    // .then(res => {
-                    //     console.log(res)
-                    // .then(res => res.text())
+               
+                fetch('https://randomuser.me/api/')
                     .then(res => res.json())
                     .then(data => {
                         console.log(data)
                         console.log(data.results)
-                        console.log(data.results[0].email) // Esto es random, no siempre trae el mismo dato.
-                        // contenido.innerHTML = `${data}`
-                        contenido.innerHTML = /*html*/
+                        console.log(data.results[0].email) 
+                     
+                        contenido.innerHTML =
                             `
             <img style="border-radius: 50%;
             object-fit: cover;

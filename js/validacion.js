@@ -1,6 +1,4 @@
 function validarFormulario() {
-    // Obtener los valores ingresados por el usuario y recortar
-    // los posibles espacios en blanco al principio y al final.
     var name = document.getElementById("name").value.trim();
     var edad = document.getElementById("edad").value.trim();
     var fecha = document.getElementById("fecha").value.trim();
@@ -8,13 +6,13 @@ function validarFormulario() {
     var dni = document.getElementById("dni").value.trim();
 
 
-    // Verificar si algún campo está en blanco
+   
     if (name === "" || edad === "" || fecha === "" || email=== "" || dni=== "" ) {
       alert("Por favor, complete todos los campos del formulario.");
       return false;
     }
 
-    // Verificar si el nombre contiene solo caracteres alfabéticos y espacios
+    
     for (var i = 0; i < name.length; i++) {
       var charCode = name.charCodeAt(i);
       if (!((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode === 32)) {
@@ -23,7 +21,7 @@ function validarFormulario() {
       }
     }
 
-    // Verificar si el DNI contiene solo 8 dígitos numéricos
+  
     if (dni.length !== 8) {
       alert("El campo 'dni' debe contener exactamente 8 dígitos numéricos.");
       return false;
@@ -36,7 +34,6 @@ function validarFormulario() {
       }
     }
 
-    // Si todas las validaciones son exitosas, enviar el formulario
     alert("Formulario enviado correctamente. Nos estaremos contactando a la brevedad. Muchas gracias");
     return 
 
